@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>PhoneGap Generic Boilerplate #6</title>
+    <title>PhoneGap Generic Boilerplate #7</title>
     <meta name="viewport" content="width=device-width">
+    <!-- https://github.com/jessemonroy650/top-phonegap-mistakes/blob/master/the-whitelist-system.md -->
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval';">
     <link rel="stylesheet" href="css/buttons.css" />
     <style>
     body {margin:0px;font-size:large;}
@@ -49,7 +51,7 @@
 <body onload="onLoad()">
 <div id=header class="button button-block button-large">
     <img align=left src=images/favicon-48x48.png>
-    PhoneGap Generic Boilerplate #6
+    PhoneGap Generic Boilerplate #7
     <button id=exitApp onclick='navigator.app.exitApp()' class="button button-pill button-primary button-large">Exit</button>
 </div>
 

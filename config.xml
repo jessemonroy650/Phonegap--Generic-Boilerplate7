@@ -29,6 +29,11 @@
         <!-- iOS SECTION -->
         <config-file target="*-Info.plist" parent="CFBundleURLTypes">
             <!-- Add iOS extensions here. SEE: http://docs.build.phonegap.com/en_US/configuring_config_file_element.md.html#Config%20File%20Elements -->
+            <key>NSAppTransportSecurity</key>
+                <dict>
+                  <key>NSAllowsArbitraryLoads</key>
+                  <true/>
+                </dict>
         </config-file>
 
         <!-- App requested permission -->
@@ -76,7 +81,7 @@
             <splash src="res/ios/splashscreen-landscape~ipad-1024x768.png"   width="1024" height="768" />
         </platform>
 
-        <!-- PLUGINS PLUGINS -->
+        <!-- PLUGINS * PLUGINS * PLUGINS -->
         <!-- spec="" follows the syntax of https://docs.npmjs.com/cli/install -->
         <plugin name="cordova-plugin-battery-status" source="npm" spec="1.1.0" />
         <plugin name="cordova-plugin-camera"         source="npm" spec="1.2.0" />
@@ -101,7 +106,14 @@
         <plugin name="cordova-plugin-vibration"      source="npm" spec="1.2.0" />
         <plugin name="cordova-plugin-whitelist"      source="npm" spec="1.0.0" /> <!-- NEW -->
 
+        <!-- 3rd PARTY PLUGINS *3rd PARTY PLUGINS -->
         <!-- popular alternative to the google chrome webview -->
-        <!-- <plugin name='org.crosswalk.engine' version='1.3.0' source='pgb' /> -->
+        <plugin name='org.crosswalk.engine' version='1.3.0' source='pgb' />
+
+        <!-- WHITELIST * WHITELIST * WHITELIST -->
+        <!-- https://github.com/jessemonroy650/top-phonegap-mistakes/blob/master/the-whitelist-system.md -->
+        <allow-navigation href="*" />
+        <allow-intent href="*" />
+        <access origin="*" /> <!-- Required for iOS9 -->
 
     </widget>
