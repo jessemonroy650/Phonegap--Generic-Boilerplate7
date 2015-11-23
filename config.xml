@@ -25,6 +25,22 @@
         <config-file platform="android" parent="/manifest" mode="add" >
             <!-- Add Android extensions here. -->
             <!-- SEE: http://docs.build.phonegap.com/en_US/configuring_config_file_element.md.html#Config%20File%20Elements -->
+            <!-- For this example, the following references were consulted. -->
+            <!-- http://developer.android.com/guide/topics/manifest/manifest-intro.html#perms -->
+            <!-- http://developer.android.com/guide/topics/manifest/uses-permission-element.html -->
+            <!-- http://developer.android.com/guide/topics/security/permissions.html -->
+            <uses-permission android:name="android.permission.CALL_PHONE" />
+            <!-- http://developer.android.com/guide/components/intents-common.html#DialPhone -->
+            <application>
+                <activity>
+                    <intent-filter>
+                        <action android:name="android.intent.action.CALL" />
+                        <category android:name="android.intent.category.DEFAULT" />
+                        <category android:name="android.intent.category.BROWSABLE" />
+                        <data android:scheme="tel" />
+                    </intent-filter>
+                </activity>
+            </application>
         </config-file>
 
         <!-- iOS SECTION -->
