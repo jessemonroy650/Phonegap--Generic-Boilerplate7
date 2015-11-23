@@ -19,13 +19,7 @@
     <script type="text/javascript" charset="utf-8" src="js/zepto-1.1.6.js"></script>
     <script type="text/javascript">
     function onButtonClick() {
-        //alert("button clicked.");
-        window.plugins.CallNumber.callNumber(
-            function () {alert("callnumber works");},
-            function () {alert("callnumber failed");},
-            "5551212",
-            true);
-        //alert("did it");
+        alert("button clicked.");
     }
     //
     // Wait for PhoneGap to load
@@ -65,7 +59,7 @@
 <button onclick='onButtonClick()' class="button button-pill button-action button-large">phone call direct?</button>
 <pre id=info>pre</pre>
 
-&nbsp;&nbsp;<a href="tel:555-1212">John Sokol</a>
+&nbsp;&nbsp;<a href="tel:555-1212">Call John</a>
 
 <div class="copyright" style="padding:5px;align:left;font-style:italic;font-size:small;">
     <span id=copyright>Created by Jesus Monroy, Jr. &copy; 2015</span>
