@@ -22,7 +22,7 @@
         <platform name="windows" />
 
         <!-- Android SECTION -->
-        <gap:config-file platform="android" parent="/manifest" mode="add" >
+        <config-file platform="android" parent="/manifest" mode="add" >
             <!-- Add Android extensions here. -->
             <!-- SEE: http://docs.build.phonegap.com/en_US/configuring_config_file_element.md.html#Config%20File%20Elements -->
             <!-- For this example, the following references were consulted. -->
@@ -32,7 +32,7 @@
             <!-- http://developer.android.com/guide/topics/security/permissions.html -->
             <!-- <uses-permission android:name="android.permission.CALL_PHONE" /> -->
             <uses-feature android:name="android.hardware.telephony" />
-        </gap:config-file>
+        </config-file>
 
         <!-- iOS SECTION -->
         <config-file target="*-Info.plist" parent="CFBundleURLTypes">
