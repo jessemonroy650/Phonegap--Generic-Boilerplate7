@@ -20,12 +20,12 @@
     <script type="text/javascript">
     function onButtonClick() {
         //alert("button clicked.");
-        CallNumber.callNumber(
+        window.plugins.CallNumber.callNumber(
             function () {alert("callnumber works");},
             function () {alert("callnumber failed");},
             "5551212",
             true);
-        alert("did it");
+        //alert("did it");
     }
     //
     // Wait for PhoneGap to load
