@@ -29,7 +29,7 @@
             <!-- http://developer.android.com/guide/topics/manifest/manifest-intro.html#perms -->
             <!-- http://developer.android.com/guide/topics/manifest/uses-permission-element.html -->
             <!-- http://developer.android.com/guide/topics/security/permissions.html -->
-            <uses-permission android:name="android.permission.CALL_PHONE" />
+            <!-- <uses-permission android:name="android.permission.CALL_PHONE" /> -->
         </config-file>
 
         <!-- iOS SECTION -->
