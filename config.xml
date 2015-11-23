@@ -5,7 +5,7 @@
         xmlns:android   = "http://schemas.android.com/apk/res/android"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.bsdmasterindex.phonegapgeneric-boilerplate7"
-        version     = "1.6.2"
+        version     = "1.6.0"
         versionCode = "10" >
         <!-- versionCode is optional and Android only -->
         <preference name='phonegap-version' value='cli-5.2.0' />
@@ -30,15 +30,7 @@
             <!-- http://developer.android.com/guide/topics/manifest/uses-permission-element.html -->
             <!-- http://developer.android.com/reference/android/Manifest.permission.html -->
             <!-- http://developer.android.com/guide/topics/security/permissions.html -->
-            <uses-permission android:name="android.permission.CALL_PHONE" />
-            <!-- http://developer.android.com/guide/components/intents-common.html#DialPhone -->
-            <application>
-                 <activity>
-                    <intent-filter>
-                        <action android:name="android.intent.action.CALL" />
-                    </intent-filter>
-                 </activity>
-            </application>
+            <!-- <uses-permission android:name="android.permission.CALL_PHONE" /> -->
         </config-file>
 
         <!-- iOS SECTION -->
@@ -104,6 +96,7 @@
         <!-- 3rd PARTY PLUGINS *3rd PARTY PLUGINS -->
         <!-- popular alternative to the google chrome webview -->
         <plugin name='org.crosswalk.engine' version='1.3.0' source='pgb' />
+        <plugin name='call-number' source='npm' />
 
         <!-- WHITELIST * WHITELIST * WHITELIST -->
         <!-- https://github.com/jessemonroy650/top-phonegap-mistakes/blob/master/the-whitelist-system.md -->
