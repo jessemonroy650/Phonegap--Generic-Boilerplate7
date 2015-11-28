@@ -6,8 +6,8 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.bsdmasterindex.phonegapgeneric-boilerplate7"
         version     = "1.6.0"
-        versionCode = "101" >
-        <!-- versionCode is optional and Android only -->
+        versionCode = "101" > <!-- versionCode is optional and Android only -->
+        <!-- Tool Set Version -->        
         <preference name='phonegap-version' value='cli-5.2.0' />
 
         <name>Phonegap Generic Boilerplate #7</name>
